@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//e/tools/**/.env)",
+      "Bash(*hyperframes*feedback*)",
+      "PowerShell(*hyperframes*feedback*)"
+    ],
+    "ask": [
+      "Bash(*gen_host.py*)",
+      "Bash(*gen_broll.py*)",
+      "Bash(*kling.py*)",
+      "Bash(*run_all.py*)",
+      "Bash(*tts_doubao.py*)",
+      "Bash(*match_gen.py*)",
+      "Bash(*hyperframes*publish*)",
+      "PowerShell(*gen_host.py*)",
+      "PowerShell(*gen_broll.py*)",
+      "PowerShell(*kling.py*)",
+      "PowerShell(*run_all.py*)",
+      "PowerShell(*tts_doubao.py*)",
+      "PowerShell(*match_gen.py*)",
+      "PowerShell(*hyperframes*publish*)"
+    ]
+  }
+}

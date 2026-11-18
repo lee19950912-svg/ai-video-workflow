@@ -1,0 +1,143 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>播客写稿规范</title><style>
+:root{--bg:#f6f3ee;--card:#fffdf9;--ink:#1d1b18;--sub:#6b645a;--line:#e4ddd2;--xt:#2f6fd6;--lj:#e0582f;--bad:#c43c3c;--good:#2f8a55;--chip:#efe9df}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15130f;--card:#1e1b17;--ink:#f1ece4;--sub:#a79f93;--line:#332e27;--xt:#7fb2ff;--lj:#ff8a66;--bad:#ff7b7b;--good:#6cc993;--chip:#2a261f}}
+:root[data-theme="dark"]{--bg:#15130f;--card:#1e1b17;--ink:#f1ece4;--sub:#a79f93;--line:#332e27;--xt:#7fb2ff;--lj:#ff8a66;--bad:#ff7b7b;--good:#6cc993;--chip:#2a261f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:960px;margin:0 auto;padding:28px 16px 60px}h1{font-size:28px;margin:0 0 6px}.lead{color:var(--sub);margin:0 0 20px}
+h2{font-size:20px;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--lj)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+ul,ol{padding-left:22px;margin:6px 0}li{margin:5px 0}.note{font-size:13px;color:var(--sub)}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--sub);font-size:13px}
+.wrap{overflow-x:auto}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ln{display:flex;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line)}.ln b{flex:0 0 40px}.ln.xt b{color:var(--xt)}.ln.lj b{color:var(--lj)}
+.bad{color:var(--bad)}.good{color:var(--good)}
+@media (max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:24px}}
+</style></head><body><main>
+<h1>AI 播客写稿规范 · 去 AI 味</h1>
+<p class="lead">2026-10-20 整理，2026-11-07 补充「开头三步」和「再加三招」。目标：让小糖和林姐听起来像两个人在聊天，而不是在念文章。依据包括：去 AI 味的开源规则（qu-ai-wei、Humanizer-zh）、维基百科「AI 写作特征」、广播口语写作指南、谷歌 NotebookLM 双人播客的公开说明，再加上对上期稿子的逐句诊断。</p>
+
+<div class="card"><b>一句话：</b>AI 味主要来自三样东西：<b>模板结构</b>（首先其次、一二三列清单、对仗、结尾总结）、<b>空泛大词</b>（赋能、意义深远、值得注意）、<b>每句都写得太完整</b>。改的办法是「删、拆、加反应」，而不是换同义词。</div>
+
+<h2>一、上期稿子的问题（逐句诊断）</h2>
+<div class="card wrap"><table>
+<tr><th style="width:24%">问题</th><th>例子</th><th style="width:30%">改法</th></tr>
+<tr><td>每句都是完整的书面句</td><td>14 句全是主谓宾齐全的句子，一个「嗯、啊、诶」都没有</td><td>允许半句话、省掉主语、中途插话</td></tr>
+<tr><td>像列清单一样讲解</td><td>林姐：「理由有两条：一是……二是……」（69 字，一口气念不完）</td><td>拆成两三轮，中间让小糖追问</td></tr>
+<tr><td>对仗金句</td><td>「一边被拆，一边登顶，这剧情也太魔幻了。」</td><td>换成随口的吐槽，不追求工整</td></tr>
+<tr><td>角色串了</td><td>小糖连说两句，讲的还都是事实（「七月就签了」「又拿了个第一」）</td><td>小糖负责问和反应，事实交给林姐</td></tr>
+<tr><td>没有人味</td><td>两人从不怀疑、不说错、不开玩笑，也没有「我第一反应是」</td><td>每期至少有一次怀疑或小纠正</td></tr>
+<tr><td>套路结尾</td><td>先总结一遍，再说「评论区聊聊」</td><td>林姐也可以说「这个我也没想好」，再把问题抛给观众</td></tr>
+</table></div>
+
+<h2>二、写稿规范</h2>
+<div class="grid">
+<div class="card"><b>角色分工（两人说话不能一个样）</b><ul>
+<li><b style="color:var(--xt)">小糖</b>：短句、多问句；会惊讶（「啊？」「诶等等」「真的假的」）；会用「好家伙」「离谱」这类口头语；偶尔说错一点，被林姐纠正。</li>
+<li><b style="color:var(--lj)">林姐</b>：先说结论（「先说结论」「准确说」「这里有个坑」）；数字和出处都由她来讲；没确认的说「据报道」；冷幽默；不站队。</li>
+<li>两人不用同一套语气词：小糖用「啊、诶、呀」，林姐用「嗯、嘛」。</li>
+<li>每人有一两句固定口头禅，但不要每期都用。</li>
+</ul></div>
+<div class="card"><b>一段的节奏（默认 60–90 秒；题材需要时可做到 2–3 分钟、约 40–46 轮，节奏照样每 10 秒来一个新东西）</b><ol>
+<li><b>开场 3 秒抛钩子</b>：小糖把新闻当成一个惊讶或问题说出来。</li>
+<li><b>林姐纠偏</b>：讲清哪些是真的，哪些被夸大了。</li>
+<li><b>说这期讲什么</b>：一句话讲清接下来能搞懂什么（前三步就是下面的「开头三步」）。</li>
+<li><b>打个比方</b>：「你就把它想成……」</li>
+<li><b>小糖追问或怀疑</b>，林姐补一句「不过有个坑」。</li>
+<li><b>反转或吐槽</b>：整期最好玩的那一点。</li>
+<li><b>收尾</b>：开头留了结局就先讲完；再说一句具体的话，加一个问观众的问题，不做总结。</li>
+</ol><p class="note">大约每 10 秒要来一个新东西：一个问题、一个反常识的事实、一个比方、或一次怀疑。</p></div>
+</div>
+
+<div class="card"><b>开头三步（前 15 秒，约 90 字）</b><ol>
+<li><b>抛钩子</b>：小糖说出观众最在意的那个惊讶或麻烦。</li>
+<li><b>给答案</b>：林姐马上给结论或纠偏，带一个具体事实，不把答案卖关子到最后。</li>
+<li><b>说这期讲什么</b>：一句话讲清接下来能搞懂什么。不写「今天我们来聊聊」。</li>
+</ol>
+<div class="ln xt"><b>小糖</b><span>林姐，你看到没？美国要把联邦政府里的 DeepSeek，全清掉。</span></div>
+<div class="ln lj"><b>林姐</b><span>先别激动啊。管的是联邦部门的电脑，咱们普通人没直接影响。</span></div>
+<div class="ln xt"><b>小糖</b><span>那它到底怕啥？</span></div>
+<div class="ln lj"><b>林姐</b><span>这期就说这个。还有更魔幻的，同一天它又拿了个开源第一。</span></div>
+<p class="note">说出口的承诺，后面一定要讲到；只承诺核实过的内容，不写「帮你省大几千」这种没有出处的话。三步是顺序，不是固定台词，每期换说法。这招还没用自己的播放数据验证过。</p></div>
+
+<div class="card"><b>再加三招（2026-11-07）</b><ol>
+<li><b>每个小话题先问一个问题</b>：小糖问出接下来要回答的问题，不超过 12 个字，这句原话挂在画面左上角。开头三步走完才开始挂，换小话题才换，追问不换；60–90 秒的一期通常一两个就够。林姐接着就答它。</li>
+<li><b>分清确定和猜测</b>：当事方确认的（官方公告、本人原帖、原文件）直接讲；媒体转述和第三方爆料，林姐说「据报道」，小糖的钩子也要带「听说」「有报道说」；林姐自己的判断，说「我的看法是」或「这是我猜的」。先讲确定的，再讲猜测。不站队不变。政治类题目照旧只说公告原文写了的，不说「据报道」，也不说自己的判断。</li>
+<li><b>明说留一个结局</b>：确实有反转才留，一期最多一个。这期的主要答案照样在开头给，留的是另一件事的后续。留了就要在结尾讲完。</li>
+</ol>
+<div class="ln xt"><b>小糖</b><span>那后来呢？</span></div>
+<div class="ln lj"><b>林姐</b><span>后来挺意外的。这个留到结尾说。</span></div>
+<p class="note">没有反转就不留，不硬造悬念。卡片上的「据报道」「观点」「示意」标签见 <code>_讲解片模板\画面规矩.md</code>。这三招还没用自己的播放数据验证过。</p></div>
+
+<div class="card"><b>口语规则</b><ul>
+<li><b>短句为主</b>：一般一句 15–30 字；林姐讲解的那句最长 50 字左右；反应句 2–6 字（「啊？」「离谱」「对对对」）。一句话最好一口气说完。</li>
+<li><b>允许口语的样子</b>：省主语（「看了，没看懂」）、说到一半改口（「上个月——不对，上上周」）、重复强调（「真的，真的很便宜」）、话说完再补半句（「挺吓人的，这个数字」）。每期挑一两处用，不要堆。</li>
+<li><b>语气词</b>：放在短语末尾、逗号前面（「这个啊，其实……」）；「嗯，」放句首。一句最多一个，叠在一起配音会很假。</li>
+<li><b>说具体的，少用形容词</b>：写「七月签的，这两天才公开」，不写「引发广泛关注」。每段至少有一个具体的数字、名字或日期。</li>
+<li><b>数字说成口语</b>：「差不多一半」「翻了三倍」「排第十一」；一句话里不放两个数字。</li>
+<li><b>不编造</b>：不给主持人编亲身经历，不加没核实过的事实；「我第一反应是……」这类反应可以加。</li>
+</ul></div>
+
+<div class="card wrap"><b>别这么写，改成这样</b>
+<table><tr><th>别这么写（AI 腔）</th><th>改成（口语）</th></tr>
+<tr><td class="bad">首先 / 其次 / 最后 / 总之 / 综上所述</td><td class="good">直接说；或者用「还有」「说白了」</td></tr>
+<tr><td class="bad">值得注意的是 / 不可否认 / 值得一提</td><td class="good">删掉，直接说事实</td></tr>
+<tr><td class="bad">不是……而是…… / 不仅……更……</td><td class="good">只说后半句</td></tr>
+<tr><td class="bad">一方面……另一方面…… / 一是……二是……</td><td class="good">拆成两轮对话</td></tr>
+<tr><td class="bad">赋能、助力、打造、闭环、底层逻辑、意义深远、引发热议、在……的浪潮中</td><td class="good">直接说谁做了什么</td></tr>
+<tr><td class="bad">因此 / 然而 / 此外</td><td class="good">所以 / 不过、可是 / 还有</td></tr>
+<tr><td class="bad">进行讨论 / 对……进行优化</td><td class="good">聊聊 / 把……改了改</td></tr>
+<tr><td class="bad">该公司 / 用户 / 目前 / 是否 / 显著</td><td class="good">他们家 / 用的人、大家 / 现在 / 是不是 / 明显、一下子</td></tr>
+<tr><td class="bad">「那这意味着什么？意味着……」（自问自答）</td><td class="good">让另一个人来问</td></tr>
+<tr><td class="bad">对仗金句、三个一组的排比、一句里两个以上成语</td><td class="good">随口的吐槽，句子有长有短</td></tr>
+<tr><td class="bad">结尾把刚说过的话再总结一遍</td><td class="good">删掉，停在一个具体细节或问题上</td></tr>
+</table></div>
+
+<div class="card"><b>写给配音软件的规则</b><ul>
+<li>问句一定要打「？」，不然读不出上扬的语气。</li>
+<li>「——」表示说到一半改口，「……」表示犹豫；不同的配音软件读这两个符号效果不一样，要试听。</li>
+<li>避开多音字和同音词：比如「行」常被读错；「致癌 / 治癌」「全部 / 全不」「期中 / 期终」这类，耳朵分不清。</li>
+<li>英文名和缩写写成要读出来的样子；数字写成「百分之三十」「第十一」。</li>
+<li>Fish 配音支持「（笑）」「（叹气）」这类情绪标签，我们这个版本具体怎么写，要先试过再定。</li>
+</ul></div>
+
+<h2>二b、一个人讲（大白话讲解，2026-11-08 起试行）</h2>
+<div class="card"><b>标准：</b>没学过技术的人听一遍就懂，并且知道这事跟自己有什么关系。听不懂就重写，不靠画面补救。</div>
+<div class="card"><b>怎么写</b><ul>
+<li>开头还是三步：第一句抛出钩子，第二句先说结论，第三句说这期讲什么，15 秒内讲完。</li>
+<li>一句只讲一件事。大多数句子 8–25 个字，最长 40 个字（自查工具会挑出来）。</li>
+<li>跟观众说话用“你”，自己用“我”，像跟朋友聊天。</li>
+<li>技术词能换成日常说法就换。换不掉的，紧跟一句“就是……”解释清楚。公司名第一次出现时，带一句它是干什么的，比如“做 Claude 的公司 Anthropic”。</li>
+<li>难点可以配一个生活里的比方，比如“就像导航里存错了一个地址”。比方随口一句就扔，<b>不要一个比方从头套到尾</b>（2026-11-12 用户说那样的稿子“ai味十足”）。几件事不平均讲，用不上的一两句带过；不写对仗句；句子有长有短，留一点“说实话”“对了”“我看啊”这样的口气。细则见 <code>制作流程-AI热点讲解片.md</code> 的“稿子怎么写”。</li>
+<li>一句最多一个数字，数字后面要讲它意味着什么。</li>
+<li>每两三句提到一样看得见的东西（笔记、地图、办公室、手机），方便配真实素材。</li>
+<li>可以用“你可能会问”替观众问一次，一期最多两次；其他时候不自问自答。</li>
+<li>当事方确认的、媒体说的、我自己的判断，三者照旧分清（“据报道”“我的看法是”）。</li>
+<li>结尾是一句具体的话加一个问观众的问题，不做总结。</li>
+</ul></div>
+<div class="card"><b>例子：</b>别写“做梦机制通过离线回放实现记忆巩固”，写“它闲下来的时候，回头翻自己的笔记，把记错的改掉”。</div>
+
+<h2>三、上期稿子：改前 vs 改后</h2>
+<p class="note">事实一条没加、一条没改，只改了说法。改后共 18 轮、约 410 字，按上期实际语速约 65 秒；最长的一句从 69 字降到 44 字。</p>
+<div class="grid">
+<div class="card"><b class="bad">改前（14 句）</b><div class="ln xt"><b>小糖</b><span>美国国土安全部刚公布一道命令：联邦政府里的 DeepSeek，要统统清掉！</span></div><div class="ln lj"><b>林姐</b><span>先别激动，管的是联邦政府的民用部门，不是全美国都不能用。</span></div><div class="ln xt"><b>小糖</b><span>那范围有多大？</span></div><div class="ln lj"><b>林姐</b><span>不光 DeepSeek 自己的产品，别人拿 DeepSeek 做出来的东西，也要一起清掉。</span></div><div class="ln xt"><b>小糖</b><span>那把模型下载下来，放在美国自己的服务器上跑呢？</span></div><div class="ln lj"><b>林姐</b><span>按公告的写法，也在清理范围里。理由有两条：一是模型本身可能藏着恶意代码或漏洞；二是用 DeepSeek 官方服务的话，数据存在中国的服务器上。</span></div><div class="ln xt"><b>小糖</b><span>而且这道命令七月就签了，这两天才公开。</span></div><div class="ln xt"><b>小糖</b><span>可巧的是，就在同一天，DeepSeek 新版又拿了个第一。</span></div><div class="ln lj"><b>林姐</b><span>在 Arena 的智能体榜上，它是开源模型第一，总榜第十一。</span></div><div class="ln xt"><b>小糖</b><span>排在它前面的，全是闭源模型，而且贵得多。</span></div><div class="ln lj"><b>林姐</b><span>价格还一分没涨。</span></div><div class="ln xt"><b>小糖</b><span>一边被拆，一边登顶，这剧情也太魔幻了。</span></div><div class="ln lj"><b>林姐</b><span>对普通用户没有直接限制，这次管的是美国联邦部门的电脑和采购。</span></div><div class="ln lj"><b>林姐</b><span>你觉得，政府的电脑该不该用外国的开源模型？评论区聊聊。</span></div></div>
+<div class="card"><b class="good">改后（18 句）</b><div class="ln xt"><b>小糖</b><span>林姐林姐，你看到没？美国要把联邦政府里的 DeepSeek，全清掉。</span></div><div class="ln lj"><b>林姐</b><span>嗯，看到了。先别激动啊，管的是联邦政府的民用部门，不是全美国都不让用。</span></div><div class="ln xt"><b>小糖</b><span>哦……就是政府的电脑不能装？</span></div><div class="ln lj"><b>林姐</b><span>不止它自己的产品。别人拿 DeepSeek 做出来的东西，也得一块儿清。</span></div><div class="ln xt"><b>小糖</b><span>啊？那我把模型下下来，放美国自己的服务器上跑呢？</span></div><div class="ln lj"><b>林姐</b><span>按公告的说法——也不行。</span></div><div class="ln xt"><b>小糖</b><span>这么狠？图啥呀？</span></div><div class="ln lj"><b>林姐</b><span>它说模型里可能藏着恶意代码，或者有漏洞。还有，用官方服务的话，数据是存在中国的服务器上。</span></div><div class="ln xt"><b>小糖</b><span>诶等等，这命令啥时候签的？</span></div><div class="ln lj"><b>林姐</b><span>七月就签了，这两天才公开。</span></div><div class="ln xt"><b>小糖</b><span>好家伙。更魔幻的是，就同一天，DeepSeek 新版又拿了个第一。</span></div><div class="ln lj"><b>林姐</b><span>准确说，是 Arena 智能体榜，开源模型里第一。放到总榜，排第十一。</span></div><div class="ln xt"><b>小糖</b><span>那前面十个呢？</span></div><div class="ln lj"><b>林姐</b><span>全是闭源的，还都比它贵得多。它呢，价格一分没涨。</span></div><div class="ln xt"><b>小糖</b><span>刚被赶出门，转头就拿第一，这剧情谁敢写啊。</span></div><div class="ln lj"><b>林姐</b><span>对咱们普通人，没有直接影响。管的就是美国联邦部门的电脑和采购。</span></div><div class="ln xt"><b>小糖</b><span>那你说，政府的电脑，该不该用外国的开源模型？</span></div><div class="ln lj"><b>林姐</b><span>这个我也没想好。你们怎么看？</span></div></div>
+</div>
+
+<h2>四、交给配音前的自检清单</h2>
+<div class="card"><ol>
+<li>出声读一遍：有没有哪句话，你对朋友绝对说不出口？</li>
+<li>搜一遍这些词：首先、其次、总之、此外、值得、不是……而是、不仅、赋能、助力、进行、意义、浪潮、破折号，每种最多出现一次。</li>
+<li>有没有正好三项的排比，或者「一方面……另一方面」？</li>
+<li>每段有没有一个具体的数字、名字或日期？</li>
+<li>前 15 秒有没有走完开头三步：钩子、答案、这期讲什么？说出口的承诺后面讲到了吗？</li>
+<li>每个小话题有没有小糖问出的那个问题？没确认的和猜测的，说清楚了吗？留的结局讲到了吗？</li>
+<li>有没有人怀疑过、追问过，或者说错了被纠正？至少要有一次。</li>
+<li>有没有哪段在总结刚说过的话？有就删。</li>
+<li>角色有没有串：小糖在讲事实，或者林姐在大惊小怪？</li>
+<li>句子是不是长短不齐？有没有超过 50 字的句子？</li>
+<li>总字数 ÷ 6.3 ≈ 秒数（按上期 1.15 倍语速实测），超时就删。</li>
+</ol></div>
+
+<p class="note">还没核实的：Fish 情绪标签在我们这个版本里的写法；国内科技播客怎么设计段落，没找到公开说明，所以「一段的节奏」是综合判断。「开头三步」学自 2026-11-07 拆解的一条抖音视频（<code>对标拆解\13438495766948267\学习笔记.md</code>），改成了两人对话的说法。「再加三招」学自 2026-11-07 拆解的另外两条（<code>对标拆解\三条视频对比.html</code>）。<br>
+主要来源：<a href="https://github.com/LifelongLazyLearner/qu-ai-wei">qu-ai-wei 去 AI 味规则</a> · <a href="https://github.com/op7418/Humanizer-zh">Humanizer-zh</a> · <a href="https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing">Wikipedia: Signs of AI writing</a> · <a href="https://m.huxiu.com/article/4784376.html">虎嗅：读者怎么认出 AI 写的文章</a> · <a href="https://yage.ai/share/ai-chinese-translationese-20260418.html">鸭哥：AI 味就是翻译腔</a> · <a href="https://deepmind.google/blog/pushing-the-frontiers-of-audio-generation/">DeepMind：NotebookLM 双人播客的声音</a> · <a href="https://github.com/Tencent-RTC/FlowTTS/issues/13">FlowTTS 播客脚本规范草案</a> · <a href="https://www.sohu.com/a/671840406_121123774">广播稿口语化写作</a></p>
+</main></body></html>

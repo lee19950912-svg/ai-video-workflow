@@ -1,0 +1,16 @@
+# 密钥、大文件和别人的素材一律不进仓库
+.env
+*.env
+__pycache__/
+node_modules/
+venv/
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.otf
+*.ttf
